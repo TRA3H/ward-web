@@ -1,70 +1,68 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ward Web Application
 
-## Available Scripts
+Welcome to the Ward Web Application! This React-based frontend is designed to work with the Ward API for intelligent clothing classification. Users can upload images of clothing, receive AI-driven classification results, and provide feedback on the accuracy of these predictions.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Image Upload**: Users can upload images of clothing to be classified.
+- **Real-Time Predictions**: The application interfaces with the Ward API to deliver real-time clothing classification.
+- **Feedback System**: Users can provide immediate feedback on whether the classification was correct.
+- **Feedback Analytics**: Visual representation of feedback data using a Doughnut chart to display the proportion of correct and incorrect classifications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get the Ward Web Application up and running on your local machine, follow these steps:
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js and npm installed (Visit [Node.js](https://nodejs.org/) for installation instructions)
+- Access to the Ward API or a similar backend service
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/your-username/ward-web.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Navigate to the project directory:
 
-### `npm run eject`
+```bash
+cd ward-web
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install the required dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Configuration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Ensure that your application is configured to connect to the Ward API. Set the API URL in the environment variables or directly within the code if not dynamically set.
 
-## Learn More
+### Running the Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To start the application locally:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies Used
 
-### Analyzing the Bundle Size
+- React.js: A JavaScript library for building user interfaces
+- Firebase: Backend database for storing feedback data
+- Chart.js: Simple yet flexible JavaScript charting for designers & developers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Contributions are welcome! Please fork the repository and submit a pull request with your features or corrections.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
