@@ -1,38 +1,188 @@
+/* General App Styling */
 .App {
   text-align: center;
+  background-color: #1a1a2e; /* Dark background for the whole app */
+  color: #e7e7e7; /* Light text color */
+  font-family: 'Arial', sans-serif; /* Modern font */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header and contents styling */
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Button Styling */
+.button {
+  font-size: 16px;
+  font-weight: bold;
   color: white;
+  background-color: #0f3460; /* Dark blue background */
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  padding: 12px 24px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover, .button:focus {
+  background-color: #16213e; /* Lighter blue on hover/focus */
+  transform: scale(1.05); /* Slightly scale buttons on hover/focus */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Typography and links */
+h1, h2, h3, p {
+  color: #e7e7e7;
+}
+
+
+a {
+  color: #4ecca3; /* Stylish cyan for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* File Button */
+.fileInput {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.fileInputLabel {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #0f3460; /* Dark blue background */
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.fileInputLabel:hover, .fileInputLabel:focus {
+  background-color: #16213e; /* Lighter blue on hover/focus */
+  transform: scale(1.05); /* Slightly scale buttons on hover/focus */
+}
+
+.fileInputLabel:hover {
+  background-color: #16213e; /* Lighter blue on hover */
+}
+
+.fileSelected {
+  background-color: #28a745; /* Green background to indicate file selected */
+  color: white; /* Ensure text color is white for better readability */
+}
+
+.fileSelected:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+
+
+/* Animations */
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/* Spinner */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* High z-index to ensure it covers other content */
+}
+
+.spinner {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Spaceing */
+
+
+.fileInputLabel, .button {
+  margin: 0 10px; /* Add space between buttons */
+}
+
+.headerTitle {
+  font-size: 3rem; /* Increase the size of the text */
+  color: #ffffff; /* Ensuring text is white for better visibility */
+}
+
+.headerDescription {
+  font-size: 1.25rem; 
+  color: #c0c0c0; 
+  max-width: 80%; 
+  margin: 20px auto; 
+  padding: 0 20px; 
+}
+
+.description-div {
+  
+  margin-bottom: 2.5rem;
+}
+
+.chart-container {
+  transition: transform 0.5s;
+  transform: scale(0.5); /* Scaling the chart */
 }

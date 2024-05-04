@@ -1,22 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ImageUpload from './components/ImageUpload';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className='header-div'>
+          <h1 className="headerTitle">Ward the Clothing Classifier</h1>
+        </div>
+        <div className='description-div'>
+          <p className="headerDescription">
+            Easily classify various clothing items with our advanced AI model. Just upload an image to get started!
+          </p>
+        </div>
+        <ImageUpload apiUrl="http://traehserver.ddns.net:5000/predict" />
       </header>
     </div>
   );
