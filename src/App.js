@@ -14,7 +14,7 @@ function App() {
             Easily classify various clothing items with our advanced AI model. Just upload an image to get started!
           </p>
         </div>
-        <ImageUpload apiUrl="http://traehserver.ddns.net:5000/predict" />
+        <ImageUpload apiUrl="https://traehserver.ddns.net/predict" />
       </header>
     </div>
   );
