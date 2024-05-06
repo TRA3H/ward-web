@@ -3,9 +3,9 @@
 
 Welcome to the Ward Web Application! This React-based frontend is designed to work with the Ward API for intelligent clothing classification. Users can upload images of clothing, receive AI-driven classification results, and provide feedback on the accuracy of these predictions.
 
-## Website
+## Website (Try it Out)
 
-Visit the Ward Web Application at [Your Website URL](#) to start using the application.
+[For a full-fledged user interface experience, visit the Ward web application.](https://ward-web.netlify.app/)
 
 ## Features
 
